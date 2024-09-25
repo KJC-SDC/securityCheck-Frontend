@@ -1,0 +1,110 @@
+
+
+.fakeBody {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden; 
+}
+
+
+
+.totalContent {
+  height: 100%;
+  width: 100%;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+}
+
+.fakeSideBAr {
+  min-width: 175px;
+  min-height: 100%;
+}
+
+.main-content {
+  width: 100%;
+  max-width: 100vw;
+  margin: 0 auto;
+  height: 100vh;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+/* Media Queries for responsive padding adjustments */
+
+/* Small devices (phones, less than 600px) */
+@media (max-width: 600px) {
+  .main-content {
+    padding-left: 5px;
+    padding-right: 10px;
+  }
+}
+
+/* Medium devices (tablets, 600px to 960px) */
+@media (min-width: 600px) and (max-width: 960px) {
+  .main-content {
+    padding-left: 10px;
+    padding-right: 15px;
+  }
+}
+
+/* Large devices (desktops, 960px and up) */
+@media (min-width: 960px) {
+  .main-content {
+    padding-left: 15px;
+    padding-right: 20px;
+  }
+}
+
+
+.main-content::-webkit-scrollbar {
+  display: none;
+}
+
+.Widgets {
+  width: 95%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px 10px 20px;
+}
+
+.data-grid {
+  width: 100%;
+  padding: 1px;
+  background-color: #ffffff;
+  border: 1px solid rgb(183, 183, 183);
+  border-radius: 10px;
+  overflow: auto;
+}
+
+.data-grid::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 419px) {
+  .fakeSideBAr {
+    min-width: 120px;
+  }
+}
+
+@media (max-width: 355px) {
+  .fakeSideBAr {
+    min-width: 100px;
+  }
+}
+
+@media (max-width: 829px) {
+  .Widgets {
+    flex-direction: column;
+  }
+}
